@@ -7,7 +7,7 @@ defmodule Scrooge.QR do
 
 	@spec qr_blob(Scrooge.Banks.banks, String.t, String.t, String.t, String.t, String.t) :: Result.t
 	def qr_blob(bank, person_name, iban, amount, short_desc \\ "", desc \\ "", ref \\ "") do
-		QRCode.create(qr_string(bank, person_name, iban, amount, short_desc, desc, ref)) |> QRCode.render()
+		QRCode.create(qr_string(bank, person_name, iban, amount, short_desc, desc, ref))
 	end 
 
 end
