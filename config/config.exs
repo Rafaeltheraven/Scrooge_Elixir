@@ -26,6 +26,9 @@ config :scrooge, ScroogeWeb.Endpoint,
 # at the `config/runtime.exs`.
 config :scrooge, Scrooge.Mailer, adapter: Swoosh.Adapters.Local
 
+# Define default currency when using Scrooge
+config :money, default_currency: :EUR
+
 # Swoosh API client is needed for adapters other than SMTP.
 config :swoosh, :api_client, false
 
